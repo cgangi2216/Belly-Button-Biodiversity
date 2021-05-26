@@ -18,17 +18,11 @@ function build_charts(subjectID) {
     // Sample data for charts
     var samples = data.samples;
     var results = samples.filter(sbj_demo => sbj_demo.id == subjectID);
-
-    var results_bar = samples.filter(sbj_demo => sbj_demo.id == subjectID);
-
     var default_result = results[0];
     var otu_ids = default_result.otu_ids;
     var otu_labels = default_result.otu_labels;
     var sample_values = default_result.sample_values;
 
-    // default_result
-    default_results_bar = results_bar[0]
-    console.log(default_results_bar)
 
     // Bar Chart
     var bar_data = [{
